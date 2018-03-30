@@ -9,6 +9,12 @@
     "gulp-sass": "^3.1.0"
   },
   "dependencies": {
-    "@ionic/pro": "1.0.20"
+    "@ionic/pro": "1.0.20",
+    "cordova-plugin-sms": "^1.0.5"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-sms": {}
+    }
   }
 }

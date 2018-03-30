@@ -1,0 +1,10 @@
+{
+  "cordova-plugin-sms": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-sms"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

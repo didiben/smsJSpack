@@ -1,0 +1,27 @@
+<ion-view view-title="SMS vote">
+    <ion-content ng-controller="SMSvoteCtrl">
+        <br>
+        <div class="text-center" ng-hide="running">
+            <button class="button button-balanced" ng-click="SMSlist()">Qui est le gagnant ?</button>
+        </div>
+        <div class="text-center" ng-show="running">
+            <button class="button button-assertive" ng-click="stopSMSWatch()">Arrêtez les votes</button>
+        </div>
+        <div class="padding text-center" ng-show="running">
+            {{watchStopped}}
+        </div>
+        <div class="padding results" ng-show="running">
+            Nombre de vote pour 1 : {{results1}}<br>
+            Nombre de vote pour 2 : {{results2}}<br>
+            Nombre de vote pour 3 : {{results3}}<br>
+            Nombre de vote pour 4 : {{results4}}<br>
+            Nombre de vote pour 5 : {{results5}}<br>
+            Nombre de vote pour 6 : {{results6}}<br>
+            Nombre d'erreurs d'envoi : {{results7}}<br>
+        </div>
+        <div class="padding" ng-show="running">
+            Erreur(s) !! Voir les détails ci-dessous ⬇️ <br>
+            {{errDisplay}}
+        </div>
+    </ion-content>
+</ion-view>
